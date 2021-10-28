@@ -1,13 +1,13 @@
 import { 
-    GraphQLObjectType, 
-    GraphQLID, 
-    GraphQLString 
+    GraphQLObjectType,
+    GraphQLID,
+    GraphQLString
 } from 'graphql';
 
 /*
-`type Person { outra forma de typa
-    id: ID!,
-    name: String!,
+`type Person {
+    id: ID,
+    name: String
 }`
 */
 export default new GraphQLObjectType({
@@ -18,15 +18,13 @@ export default new GraphQLObjectType({
             id: {
                 type: GraphQLID,
                 description: 'Unique ID',
-                resolve: () => '2'
-
+                resolve: (person) => person.id
             },
-            name: {
+            name: { 
                 type: GraphQLString,
                 description: 'Person name',
-                resolve: () => 'Luiz'
-
+                resolve: (person) => person.name
             }
         }
     }
-})
+});

@@ -1,28 +1,26 @@
 {
-  "name": "graphqlbasics",
+  "name": "graphql-exp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index.js --exec babel-node --presets babel-preset-env",
-    "dep": "npm install express body-parser express-graphql graphql graphql-tools mongoose --save",
-    "dep-dev": "npm install babel-cli babel-preset-env nodemon --save-dev",
-    "config": "npm run dep && npm run dep-dev"
+    "start": "nodemon src/index.js --exec babel-node --presets babel-preset-env"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "graphql-tools": "^4.0.4",
+    "mongoose": "^5.4.10"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "express-graphql": "^0.12.0",
-    "graphql": "^15.7.1",
-    "graphql-tools": "^8.2.0",
-    "mongoose": "^6.0.12",
-    "nodemon": "^2.0.14"
+    "nodemon": "^1.18.9"
   }
 }

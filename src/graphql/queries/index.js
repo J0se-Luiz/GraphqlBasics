@@ -1,4 +1,4 @@
-import people from "./people";
+import people from './people';
 
 export default {
     people
