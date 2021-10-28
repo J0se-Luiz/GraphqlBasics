@@ -12,7 +12,7 @@ npm install express body-parser express-graphql graphql graphql-tools mongoose -
 <br/>
 
 ``
-...3
+npm install babel-cli babel-preset-env nodemon --save-dev
 ``
 
 <br/>
