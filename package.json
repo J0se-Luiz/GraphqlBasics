@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/index.js --exec babel-node --presets babel-preset-env",
-    "setup": "npm install express body-parser express-graphql graphql graphql-tools mongoose --save babel-cli babel-preset-env nodemon --save-dev"
+    "dep": "npm install express body-parser express-graphql graphql graphql-tools mongoose --save",
+    "dep-dev": "npm install babel-cli babel-preset-env nodemon --save-dev",
+    "config": "npm run dep && npm run dep-dev"
   },
   "keywords": [],
   "author": "",
